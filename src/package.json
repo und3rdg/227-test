@@ -1,0 +1,86 @@
+{
+    "name": "b.laskowski",
+    "version": "1.0.0",
+    "description": "test",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:und3rdg/227-test.git"
+    },
+    "main": "gulpfile.js",
+    "scripts": {
+        "start": "gulp",
+        "bs": "gulp bs",
+        "watch": "gulp watch",
+        "test:watch": "mocha -w --require @babel/register -R nyan",
+        "test": "mocha --require @babel/register -R nyan"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "gulp && git add ../dist/ && npm test --prefix",
+            "pre-push": "npm test"
+        }
+    },
+    "author": "Bartek Laskowski",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-class-properties": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/register": "^7.0.0",
+        "autoprefixer": "^7.1.5",
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babelify": "^9.0.0",
+        "browser-sync": "^2.24.4",
+        "browserify": "^16.2.3",
+        "chai": "^4.2.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-clean-css": "^3.10.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-duration": "0.0.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "husky": "^2.7.0",
+        "jsdom": "^15.1.0",
+        "mocha": "^6.0.2",
+        "nodelist-to-array": "^2.0.0",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4",
+        "vinyl-buffer": "^1.0.1",
+        "vinyl-source-stream": "^2.0.0",
+        "watchify": "^3.11.1"
+    },
+    "babel": {
+        "presets": [
+            "@babel/env",
+            "@babel/preset-react"
+        ]
+    },
+    "browserify": {
+        "transform": [
+            [
+                "babelify",
+                {
+                    "presets": [
+                        "@babel/env",
+                        "@babel/preset-react"
+                    ]
+                }
+            ]
+        ]
+    },
+    "dependencies": {
+        "clndr": "^1.4.7",
+        "moment": "^2.22.2",
+        "moment-with-locales-es6": "^1.0.1",
+        "@undg/react-slick_wkcd": "^0.24.1",
+        "classnames": "^2.2.6",
+        "var_dumpphp": "^1.2.2"
+    }
+}
