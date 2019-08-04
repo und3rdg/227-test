@@ -1,0 +1,29 @@
+@import '_variables';
+.bg_black {
+    background-color: $black;
+    color: $white;
+    a{
+        color: $white;
+    }
+    .svg_icon {
+        fill: $white;
+        &.instagram,
+        &.hr_line{
+            stroke: $black;
+        }
+    }
+}
+.bg_white {
+    background: $white;
+    color: $black;
+    a{
+        color: $black;
+    }
+    .svg_icon {
+        fill: $black;
+        &.instagram,
+        &.hr_line{
+            stroke: $white;
+        }
+    }
+}
