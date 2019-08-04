@@ -1,0 +1,29 @@
+@import '../_variables';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 80px;
+    padding-bottom:  100px;
+
+    .contact_form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (min-width: $media_medium) {
+            flex-direction: row;
+        }
+    }
+    input {
+        height: 30px;
+        width: 180px;
+        border: 1px solid white;
+        margin: 5px;
+        padding: 5px;
+    }
+
+}

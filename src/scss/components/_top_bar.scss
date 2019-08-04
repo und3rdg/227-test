@@ -1,0 +1,18 @@
+@import "../_variables";
+.top_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 10px;
+
+    @media only screen and (min-width: $media_medium) {
+        flex-direction: row;
+        position: relative;
+        .social {
+            position: absolute;
+            right: 20px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import '../_variables';
+
+.instagram {
+    .images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10px 1fr 10px;
+        grid-gap: 5px;
+        @media only screen and (min-width: 500px) {
+            grid-gap: 15px;
+        }
+        @media only screen and (min-width: $media_medium) {
+            grid-gap: 20px;
+        }
+        img {
+            grid-row: 2/3;
+            &:nth-of-type(2n) {
+                grid-row: 1/3;
+            }
+        }
+    }
+}

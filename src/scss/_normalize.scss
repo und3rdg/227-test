@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -21,8 +24,14 @@ pre {
     font-family: monospace, monospace;
     font-size: 1em;
 }
-a {
+a, label, .btn {
+    cursor: pointer;
     background-color: transparent;
+    transition: 0.5s opacity ease;
+    &:hover, &:active {
+        opacity: 0.6;
+    }
+    text-decoration: none;
 }
 abbr[title] {
     border-bottom: none;

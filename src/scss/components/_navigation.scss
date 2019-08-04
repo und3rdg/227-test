@@ -1,0 +1,50 @@
+@import '../_variables';
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        height: 30px;
+    }
+
+    .menu {
+        #menu_open_handler {
+            display: none;
+            &:checked ~ ul {
+                visibility: visible;
+                opacity: 1;
+                z-index: 99;
+            }
+        }
+        position: relative;
+        ul {
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s;
+            right: 0;
+            padding: 0 20px;
+            min-width: 200px;
+            li {
+                margin: 3px;
+                padding: 3px;
+            }
+        }
+        @media only screen and (min-width: $media_medium) {
+            .menu_open_trigger {
+                display: none;
+            }
+            position: static;
+            ul {
+                position: static;
+                visibility: visible;
+                opacity: 1;
+                min-width: auto;
+
+                display: flex;
+                a {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

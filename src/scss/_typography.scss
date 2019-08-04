@@ -1,0 +1,42 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$raleway: "Raleway";
+$arial: "Arial";
+
+.font_red {
+    color: $red;
+}
+.font_grey {
+    color: $grey;
+}
+.font_white {
+    color: $white;
+}
+.font_black {
+    color: $black;
+}
+
+body {
+    font-family: $raleway;
+}
+
+.title, .links, .banner_txt, .banner_txt a {
+    font-family: $arial;
+    font-weight: bold;
+}
+
+
+.title {
+    font-size: 18px;
+}
+.links {
+    font-size: 12px;
+}
+
+.copyright{
+    font-size: 12px;
+    line-height: 1.4;
+}
+// this is MVP
+// on my list this is always last part to do.

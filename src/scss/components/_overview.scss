@@ -1,0 +1,12 @@
+@import '../_variables';
+.overview {
+    @media only screen and (min-width: $media_medium) {
+        width: calc(100vw * 3/5);
+    }
+
+    text-align: center;
+
+    p {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,42 @@
+@import '../_variables';
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .links {
+        padding-bottom: 30px;
+        text-align: center;
+        li {
+            padding: 3px;
+            margin: 3px;
+            margin-bottom: 10px;
+        }
+        @media only screen and (min-width: $media_medium) {
+            text-align: left;
+            display: flex;
+            li {
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    hr { 
+        width: 80px;
+    }
+    .social {
+        padding-top: 30px;
+    }
+    .copyright{
+        padding-top: 50px;
+    }
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+    @media only screen and (min-width: $media_medium) {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}

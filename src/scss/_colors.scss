@@ -1,4 +1,7 @@
 @import '_variables';
+
+// with more colors it will be done with scss loop and array of variables.
+// but I have only few.
 .bg_black {
     background-color: $black;
     color: $white;
@@ -21,6 +24,20 @@
     }
     .svg_icon {
         fill: $black;
+        &.instagram,
+        &.hr_line{
+            stroke: $white;
+        }
+    }
+}
+.bg_red {
+    background: $red;
+    color: $white;
+    a{
+        color: $red;
+    }
+    .svg_icon {
+        fill: $red;
         &.instagram,
         &.hr_line{
             stroke: $white;

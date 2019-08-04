@@ -1,7 +1,18 @@
 @import '_reset';
 @import '_normalize';
-@import '_fonts';
+@import '_typography';
 @import '_colors';
 @import '_icons';
+@import '_common';
 @import '_layout';
 
+
+@import 'components/_top_bar';
+@import 'components/_navigation';
+@import 'components/_banner';
+@import 'components/_overview';
+@import 'components/_contact';
+
+@import 'components/_gallery';
+@import 'components/_instagram';
+@import 'components/_footer';
