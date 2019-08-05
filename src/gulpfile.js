@@ -33,7 +33,7 @@ const css = {
     },
     print:{
         src:[
-            './src/scss/print.scss'
+            './scss/print.scss'
         ],
         dist: 'print.css'
     }
@@ -165,7 +165,7 @@ gulp.task('js', ()=>{
 //////////////////////////////////////////////
 let scss_constructor_task = (obj_name) => {
     gulp.task(obj_name, () => {
-        let stream = gulp.src(css[obj_name].src, { base: './src/scss' })
+        let stream = gulp.src(css[obj_name].src, { base: './scss' })
         stream = stream.pipe(plumber())
         stream = IS_DEV ? stream.pipe(sourcemaps.init()) : stream
         stream = stream.pipe(sass().on('error',sass.logError))
@@ -214,7 +214,7 @@ const watch_scss = () => {
 //////////////////////////////////////////////
 gulp.task('watch_bs', ['browserSync'], () => {
     watch_scss()
-    gulp.watch(['./src/js/**/*.js', '!./src/js/**/node_modules/**'], ['js'])
+    gulp.watch(['./js/**/*.js', '!./js/**/node_modules/**'], ['js'])
     gulp.watch([
         '../application/**/*.php',
         './../**/*.html'
@@ -271,7 +271,7 @@ gulp.task('browserSync', () => {
 // >$ npx gulp watch
 gulp.task('watch-default', () =>  {
     watch_scss()
-    gulp.watch(['./src/js/**/*.js'], ['js'])
+    gulp.watch(['./js/**/*.js'], ['js'])
 })
 gulp.task('watch', ['scss', 'js', 'watch-default'])
 

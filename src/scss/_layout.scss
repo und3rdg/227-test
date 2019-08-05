@@ -28,6 +28,9 @@
 
 .title{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
     @media only screen and (min-width: $media_medium) {
         margin-bottom: 20px;
@@ -35,9 +38,6 @@
 
 }
 .hr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &:before, &:after{
         content: "";
         height: 1px;

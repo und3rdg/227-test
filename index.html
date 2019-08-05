@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <nav class="navigation wrap">
+        <div class="navigation wrap">
             <!-- I like to convert it to svg to be able to it's style from css-->
             <img class="logo" src="dist/img/Logo.png">
 
@@ -48,7 +48,7 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
-        </nav>
+        </div>
 
         <div class="banner wrap">
             <img src="https://via.placeholder.com/1700x680.jpg" alt="">
@@ -60,21 +60,24 @@
         
         <div class="gallery wrap">
             <h2 class="hr title">GALLERY</h2>
-            <div class="carousel">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
-                <img src="https://via.placeholder.com/330x330.jpg" alt="">
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide1"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide2"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide3"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide4"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide5"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide7"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide8"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide9"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide10"></li>
+                        <li class="glide__slide"><img src="https://via.placeholder.com/330x330.jpg?text=Slide11"></li>
+                    </ul>
+                </div>
             </div>
+
         </div>
 
         <div class="overview wrap">
@@ -86,14 +89,14 @@
         <div class="contact wrap_full bg_black">
             <p>FILLIN THIS FORM TO STAY UP TO DATE WITH NEWS & EVENTS</p>
             <form class="contact_form" action="#">
-                <input class="bg_black" type="text" placeholder="First Name"></imput>
-                <input class="bg_black" type="email" placeholder="Email Address"></imput>
-                <input class="bg_red btn" type="submit" value="SIGN ME UP"></imput>
+                <input class="bg_black" type="text" placeholder="First Name"></input>
+                <input class="bg_black" type="email" placeholder="Email Address"></input>
+                <input class="bg_red btn" type="submit" value="SIGN ME UP"></input>
             </form>
         </div>
 
         <div class="instagram wrap">
-            <h2 class="hr title">GALLERY</h2>
+            <h2 class="title">INSTAGRAM</h2>
             <div class="images">
                 <img src="https://via.placeholder.com/330x330.jpg" alt="">
                 <img src="https://via.placeholder.com/330x330.jpg" alt="">
@@ -139,5 +142,6 @@
             </div>
         </footer>
     </div>
+    <script src="dist/js/bundle.js"></script>
 </body>
 </html>
